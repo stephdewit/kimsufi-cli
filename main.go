@@ -18,7 +18,7 @@ func main() {
 	}
 
 	switch os.Args[1] {
-	case "availability":
+	case "availability", "a":
 		availabilityCommand.Parse(os.Args[2:])
 
 		if len(availabilityCommand.Args()) < 1 {
